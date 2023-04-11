@@ -36,7 +36,7 @@ The basic issue is when you read a description of a data analysis, such as in an
 ottrpal::include_slide("https://docs.google.com/presentation/d/1-pVlxwkzTzFH4PHWzm9cuXbKpzlbSd1TvXEy60Sste0/edit#slide=id.p")
 ```
 
-In this pipeline, there are two "actors": the *author* of the report/article and the *reader*. On the left side, the author is going from left to right along this pipeline. The reader is going from right to left. If you're the reader you read the article and you want to know more about what happened: Where is the data? What was used here? The basic idea behind reproducibility is to focus on the elements in the blue blox: the analytic data and the computational results. With reproducibility the goal is to allow the author of a report and the reader of that report to "meet in the middle". 
+In this pipeline, there are two "actors": the *author* of the report/article and the *reader*. On the left side, the author is going from left to right along this pipeline. The reader is going from right to left. If you're the reader you read the article and you want to know more about what happened: Where is the data? What was used here? The basic idea behind reproducibility is to focus on the analytic data and the computational results. With reproducibility the goal is to allow the author of a report and the reader of that report to "meet in the middle". 
 
 ## Elements of Reproducibility
 
