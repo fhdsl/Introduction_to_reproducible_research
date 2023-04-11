@@ -1,5 +1,5 @@
 ---
-title: "Course Name"
+title: "Introduction to Reproducible Research"
 date: "`r format(Sys.time(), '%B, %Y')`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -14,6 +14,24 @@ output:
 ---
 
 # About this Course {-}
+
+This course will introduce the learner to the basic concepts of reproducibility and replication of scientific research. The premise of the course is that reproducibility failure can be traced to many different root causes and being able to identify these root causes will provide the basis for preventing future failure. The course will provide case studies from three historical data analyses depicting what constitutes a failure of reproducibility. The motivating case studies come from (1) the Harvard Six Cities Study of air pollution and mortality; (2) the National Morbidity and Mortality Air Pollution Study, and (3) a study describing the development of microarray-based genomic signatures for predicting chemotherapy response. These case studies highlight various aspects of data analysis that can lead to reproducibility failure, such as workflow management, data analytic modeling choices, stakeholder engagement, team organization, and communication.
+
+## Learning Objectives {-}
+
+Upon completing this module, a learner will be able to
+
+1. Describe the requirements for reproducible analyses
+
+2. Identify stakeholders affected by reproducibility of an analysis (i.e. collaborators, students, other researchers)
+
+3. Describe the impact of reproducibility on various data analysis stakeholders 
+
+4. Characterize the difference between reproducibility and replication
+
+5. Identify organizational or analytic problems that can lead to non-reproducible research
+
+
 
 
 ## Available course formats
