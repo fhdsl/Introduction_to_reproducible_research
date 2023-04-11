@@ -13,9 +13,9 @@ output:
       toc: true
 ---
 
-# About this Course {-}
+# About this Course {-} 
 
-This course will introduce the learner to the basic concepts of reproducibility and replication of scientific research. The premise of the course is that reproducibility failure can be traced to many different root causes and being able to identify these root causes will provide the basis for preventing future failure. The course will provide case studies from three historical data analyses depicting what constitutes a failure of reproducibility. The motivating case studies come from (1) the Harvard Six Cities Study of air pollution and mortality; (2) the National Morbidity and Mortality Air Pollution Study, and (3) a study describing the development of microarray-based genomic signatures for predicting chemotherapy response. These case studies highlight various aspects of data analysis that can lead to reproducibility failure, such as workflow management, data analytic modeling choices, stakeholder engagement, team organization, and communication.
+This course will introduce the learner to the basic concepts of reproducibility and replication of scientific research. The premise of the course is that reproducibility failure can be traced to many different root causes and being able to identify these root causes will provide the basis for preventing future failure. The course will provide case studies from three historical data analyses depicting what constitutes a failure of reproducibility. The motivating case study comes from a study describing the development of microarray-based genomic signatures for predicting chemotherapy response. This case study highlights various aspects of data analysis that can lead to reproducibility failure, such as workflow management, data analytic modeling choices, stakeholder engagement, team organization, and communication.
 
 ## Learning Objectives {-}
 
@@ -34,11 +34,11 @@ Upon completing this module, a learner will be able to
 
 
 
-## Available course formats
+## Available course formats {-}
 
 This course is available in multiple formats which allows you to take it in the way that best suites your needs. You can take it for certificate which can be for free or fee.
 
 - The material for this course can be viewed without login requirement on this [Bookdown website](LINK HERE). This format might be most appropriate for you if you rely on screen-reader technology.
 - This course can be taken for [free certification through Leanpub](LINK HERE).
 - This course can be taken on [Coursera for certification here](LINK HERE) (but it is not available for free on Coursera).
-- Our courses are open source, you can find the [source material for this course on GitHub](LINK HERE).
+- Our courses are open source, you can find the [source material for this course on GitHub](https://github.com/fhdsl/Introduction_to_reproducible_research).

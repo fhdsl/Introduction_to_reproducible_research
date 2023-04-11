@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 1 Introduction | Introduction to Reproducible Research</title>
+  <title>Chapter 3 Learning from Failure | Introduction to Reproducible Research</title>
   <meta name="description" content="Description about Course/Book." />
   <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 1 Introduction | Introduction to Reproducible Research" />
+  <meta property="og:title" content="Chapter 3 Learning from Failure | Introduction to Reproducible Research" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 1 Introduction | Introduction to Reproducible Research" />
+  <meta name="twitter:title" content="Chapter 3 Learning from Failure | Introduction to Reproducible Research" />
   
   <meta name="twitter:description" content="Description about Course/Book." />
   
@@ -29,8 +29,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="index.html"/>
-<link rel="next" href="from-x-to-computational-x.html"/>
+<link rel="prev" href="from-x-to-computational-x.html"/>
+<link rel="next" href="case-study-developing-a-genomic-predictor.html"/>
 <script src="libs/header-attrs-2.10/header-attrs.js"></script>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
@@ -136,43 +136,16 @@
 <div class="hero-image-container">
   <img class= "hero-image" src="assets/RR25_thin_main_image.png">
 </div>
-<div id="introduction" class="section level1" number="1">
-<h1><span class="header-section-number">Chapter 1</span> Introduction</h1>
-<p>This chapter will be about the concept of reproducible research and we will cover some basic concepts and ideas that are related to reproducible research.
-Before we get to <em>reproducibility</em>, we need to cover a little background with respect to how science works (even if you’re not a scientist, this is important). The basic idea is that in science, <em>replication</em> is the most important element of verifying and validating findings. So if you claim that X causes Y, or that Vitamin C improves disease, or that something causes a problem, what happens is that other scientists that are independent of you will try to investigate that same question and see if they come up with a similar result. If lots of different people come up with the same result and replicate the original finding, then we tend to think that the original finding was probably true and that this is a real relationship or real finding.</p>
-<p>The ultimate standard in strengthening scientific evidence is replication. The goal is to have independent people to do independent things with different data, different methods, and different laboratories and see if you get the same result. There’s a sense that if a relationship in nature is truly there, then it should be robust to having different people discover it in different ways. Replication is particularly important in areas where findings can have big policy impacts or can influence regulatory types of decisions.</p>
-<div id="whats-wrong-with-replication" class="section level2" number="1.1">
-<h2><span class="header-section-number">1.1</span> What’s Wrong with Replication?</h2>
-<p>So what’s wrong with replication? There’s really nothing wrong with it. This is what science has been doing for a long time, through hundreds of years. And there’s nothing wrong with it today. But the problem is that it’s becoming more and more challenging to do replication or to replicate other studies. Part of the reason is because studies are getting bigger and bigger.</p>
-<p>In order to do big studies you need a lot of money and so, well, there’s a lot of money involved! If you want to do ten versions of the same study, you need ten times as much money and there’s not as much money around as there used to be. Sometimes it’s difficult to replicate a study because if the original study took 20 years to do, it’s difficult to wait around another 20 years for replication. Some studies are just plain unique, such as studying the impact of a massive earthquake in a very specific location and time. If you’re looking at a unique situation in time or a unique population, you can’t readily replicate that situation.</p>
-<p>There are a lot of good reasons why you can’t replicate a study. If you can’t replicate a study, is the alternative just to do nothing, just let that study stand by itself? The idea behind a reproducible research is to create a kind of minimum standard or a middle ground where we won’t be replicating a study, but maybe we can do something in between. The basic problem is that you have the gold standard, which is replication, and then you have the worst standard which is doing nothing. What can we do that’s in between the gold standard and doing nothing? That is where reproducibility comes in. That’s how we can kind of bridge the gap between replication and nothing.</p>
-<p>In non-research settings, often full replication isn’t even the point. Often the goal is to preserve something to the point where anybody in an organization can repeat what you did (for example, after you leave the organization). In this case, reproducibility is key to maintaining the history of a project and making sure that every step along the way is clear.</p>
-</div>
-<div id="reproducibility-to-the-rescue" class="section level2" number="1.2">
-<h2><span class="header-section-number">1.2</span> Reproducibility to the Rescue</h2>
-<p>Why do we need this kind of middle ground? We haven’t clearly defined reproducibility yet, but the basic idea is that you need to make the <strong>data</strong> available for the original study and the <strong>computational methods</strong> available so that other people can look at your data and run the kind of analysis that you’ve run, and come to the same findings that you found.</p>
-<p>What reproducible research is about is a <em>validation of the data analysis</em>. Because you’re not collecting independent data using independent methods, it’s a little bit more difficult to validate the scientific question itself. But if you can take someone’s data and reproduce their findings, then you can, in some sense, validate the data analysis. This involves having the data and the code because more likely than not, the analysis will have been done on the computer using some sort of programming language, like R. So you can take their code and their data and reproduce the findings that they come up with. Then you can at least have confidence that the analysis was done appropriately and that the correct methods were used.</p>
-<p>Recently, there’s been a lot of discussion of reproducibility in the media and in the scientific literature. The journal <em>Science</em> had a special issue on reproducibility and data replication. Other journals have updated policies on publication to encourage reproducibility. In 2012, a feature on the TV show 60 minutes looked at a major incident at Duke University where many results involving a promising cancer test were found to be not reproducible (more on that later). This led to a number of studies and clinical trials having to be stopped, followed by an investigation which is still ongoing.</p>
-</div>
-<div id="reproducibility-guidelines" class="section level2" number="1.3">
-<h2><span class="header-section-number">1.3</span> Reproducibility Guidelines</h2>
-<p>Finally, the Institute of Medicine (now the National Academy of Medicine), in response to a lot of events involving reproducibility of scientific studies, issued a report saying that best practices should be done to promote and encourage reproducibility, particularly in what’s called ’omics based research, such as genomics, proteomics, other similar areas involving high-throughput biological measurements. This was a very important report. Of the many recommendations that the IOM made, the key ones were that</p>
+<div id="learning-from-failure" class="section level1" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Learning from Failure</h1>
+<p>Learning about how data analyses succeeds or fails (but more importantly, fails) is extremely challenging without actually going through the process yourself. I don’t think I ever learned about it except through first hand experience, which took place over the course of years. There are a few reasons for this that I have observed over time:</p>
 <ul>
-<li><p>Data and metadata need to be made available;</p></li>
-<li><p>Computer code should be fully specified, so that people can examine it to see what was done;</p></li>
-<li><p>All the steps of the computational analysis, including any preprocessing of data, should be fully described so that people can study it and reproduce it.</p></li>
+<li><p>Success in scientific data analysis is usually concerned with whether the claims made based on the results are <em>true</em> or not. If the results feel true, and the analysis appears rigorous, then that’s usually the end of the discussion. Focus is put on the result and what should come next. The underlying idea here is not necessarily misguided: Progress in science depends on independent replication, and any given analysis cannot be assigned too much weight.</p></li>
+<li><p>When analyses fail, the results are usually vague and confusing. Furthermore, the public rarely finds out about them because they are not published. This is mostly due to human nature: it’s difficult to motivate oneself to write about an experience that was inconclusive and perhaps incoherent. It can also be embarrassing if honest mistakes were made. Publication of negative studies is a separate matter, because a truly negative study is, in fact, conclusive. But often, we don’t even have that much clarity.</p></li>
+<li><p>In the rare cases where we do find out about data analysis failures, the focus is often on who or what is to blame. In cases where criminal activity has taken place, this is an important aspect. However, identifying who or what is to blame usually doesn’t provide us with generalizable knowledge that we can apply to our own data analyses. The underlying assumption of assigning blame is that this failure was a unique situation that could never have happened if the individual to blame had not been involved. Occasionally, there are cases where there is a clear bug in some software that leads to erroneous results. Fixing the bug in the code will “fix” the results, but even in that situation it’s not always clear that the bug is the ultimate cause of failure (although in this case it is the proximate cause).</p></li>
 </ul>
-<p>We will expand on these ideas in the chapters that follow.</p>
-</div>
-<div id="summary" class="section level2" number="1.4">
-<h2><span class="header-section-number">1.4</span> Summary</h2>
-<ul>
-<li><p>Replication, whereby scientific questions are examined and verified independently by different scientists, is the gold standard for scientific validity.</p></li>
-<li><p>Replication can be difficult and often there are no resources to independently replicate a study.</p></li>
-<li><p>Reproducibility, whereby data and code are re-analyzed by independent scientists to obtain the same results of the original investigator, is a reasonable minimum standard when replication is not possible.</p></li>
-</ul>
+<p>The case study presented in the next chapter is useful for thinking about what kinds of generalizable knowledge we can obtain from data analysis failures. This case is special because it had serious implications and large parts of it played out in public. While we likely will never know <em>all</em> of the details, we know enough to have a meaningful discussion about the lessons learned.</p>
 
-</div>
 </div>
 <hr>
 <center> 
@@ -187,8 +160,8 @@ Before we get to <em>reproducibility</em>, we need to cover a little background 
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="from-x-to-computational-x.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="from-x-to-computational-x.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="case-study-developing-a-genomic-predictor.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
