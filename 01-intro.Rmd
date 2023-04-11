@@ -6,6 +6,8 @@ ottrpal::set_knitr_image_path()
 # Introduction
 
 
+
+
 ## Motivation
 
 
