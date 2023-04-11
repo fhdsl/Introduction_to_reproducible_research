@@ -1,11 +1,4 @@
----
-title: What can we learn from data analysis failures?
-author: Roger Peng
-date: '2018-04-23'
-output:
-  distill::distill_article:
-    self_contained: no
----
+
 
 
 Back in February, I gave a talk at the Walter and Eliza Hall Research Institute in Melbourne titled "Lessons in Disaster: What Can We Learn from Data Analysis Failures?" This talk was quite different from talks that I usually give on computing or environmental health and I’m guessing it probably showed. It was nevertheless a fun talk and I got to talk about space-related stuff. If you want to hear some discussion of the development of this talk, you can listen to [Episode 53 of Not So Standard Deviations](http://nssdeviations.com/53-shaken-not-stirred).
