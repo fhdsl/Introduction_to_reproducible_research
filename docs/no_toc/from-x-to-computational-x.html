@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 From “X” to “Computational X” | Introduction to Reproducible Research</title>
+  <meta name="description" content="Description about Course/Book." />
+  <meta name="generator" content="bookdown 0.24 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 From “X” to “Computational X” | Introduction to Reproducible Research" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Description about Course/Book." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 From “X” to “Computational X” | Introduction to Reproducible Research" />
+  
+  <meta name="twitter:description" content="Description about Course/Book." />
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+<link rel="prev" href="introduction.html"/>
+<link rel="next" href="learning-from-failure.html"/>
+<script src="libs/header-attrs-2.10/header-attrs.js"></script>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+
+
+<link rel="stylesheet" href="assets/style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<a href="https://hutchdatascience.org/" target="_blank"><img src="assets/RR25.png" style="width: 80%; padding-left: 34px; padding-top: 8px;"</a>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>About this Course</a>
+<ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#learning-objectives"><i class="fa fa-check"></i>Learning Objectives</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#available-course-formats"><i class="fa fa-check"></i>Available course formats</a></li>
+</ul></li>
+<li class="chapter" data-level="1" data-path="introduction.html"><a href="introduction.html"><i class="fa fa-check"></i><b>1</b> Introduction</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="introduction.html"><a href="introduction.html#whats-wrong-with-replication"><i class="fa fa-check"></i><b>1.1</b> What’s Wrong with Replication?</a></li>
+<li class="chapter" data-level="1.2" data-path="introduction.html"><a href="introduction.html#reproducibility-to-the-rescue"><i class="fa fa-check"></i><b>1.2</b> Reproducibility to the Rescue</a></li>
+<li class="chapter" data-level="1.3" data-path="introduction.html"><a href="introduction.html#reproducibility-guidelines"><i class="fa fa-check"></i><b>1.3</b> Reproducibility Guidelines</a></li>
+<li class="chapter" data-level="1.4" data-path="introduction.html"><a href="introduction.html#summary"><i class="fa fa-check"></i><b>1.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html"><i class="fa fa-check"></i><b>2</b> From “X” to “Computational X”</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html#example-air-pollution-and-health"><i class="fa fa-check"></i><b>2.1</b> Example: Air Pollution and Health</a></li>
+<li class="chapter" data-level="2.2" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html#the-data-science-pipeline"><i class="fa fa-check"></i><b>2.2</b> The Data Science Pipeline</a></li>
+<li class="chapter" data-level="2.3" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html#elements-of-reproducibility"><i class="fa fa-check"></i><b>2.3</b> Elements of Reproducibility</a></li>
+<li class="chapter" data-level="2.4" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html#authors-and-readers"><i class="fa fa-check"></i><b>2.4</b> Authors and Readers</a></li>
+<li class="chapter" data-level="2.5" data-path="from-x-to-computational-x.html"><a href="from-x-to-computational-x.html#summary-1"><i class="fa fa-check"></i><b>2.5</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="learning-from-failure.html"><a href="learning-from-failure.html"><i class="fa fa-check"></i><b>3</b> Learning from Failure</a></li>
+<li class="chapter" data-level="4" data-path="case-study-developing-a-genomic-predictor.html"><a href="case-study-developing-a-genomic-predictor.html"><i class="fa fa-check"></i><b>4</b> Case Study: Developing a Genomic Predictor</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="case-study-developing-a-genomic-predictor.html"><a href="case-study-developing-a-genomic-predictor.html#initial-lessons"><i class="fa fa-check"></i><b>4.1</b> Initial Lessons</a></li>
+<li class="chapter" data-level="4.2" data-path="case-study-developing-a-genomic-predictor.html"><a href="case-study-developing-a-genomic-predictor.html#new-information-appears"><i class="fa fa-check"></i><b>4.2</b> New Information Appears</a></li>
+<li class="chapter" data-level="4.3" data-path="case-study-developing-a-genomic-predictor.html"><a href="case-study-developing-a-genomic-predictor.html#lessons-learned"><i class="fa fa-check"></i><b>4.3</b> Lessons Learned</a></li>
+<li class="chapter" data-level="4.4" data-path="case-study-developing-a-genomic-predictor.html"><a href="case-study-developing-a-genomic-predictor.html#summary-2"><i class="fa fa-check"></i><b>4.4</b> Summary</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="about-the-authors.html"><a href="about-the-authors.html"><i class="fa fa-check"></i>About the Authors</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<p style="text-align:center;"> <a href="https://github.com/jhudsl/OTTR_Template" target="blank" > This content was published with</a> <a href="https://bookdown.org/" target="blank"> bookdown by: </a> </p>
+<p style="text-align:center;"> <a href="https://hutchdatascience.org/"> The Fred Hutch Data Science Lab </a></p>
+<p style="text-align:center;"> <a href=" https://stat.utexas.edu/"> and The University of Texas at Austin </a></p>
+<p style="text-align:center; font-size: 12px;"> <a href="https://github.com/rstudio4edu/rstudio4edu-book/"> Style adapted from: rstudio4edu-book </a> <a href ="https://creativecommons.org/licenses/by/2.0/"> (CC-BY 2.0) </a></p>
+<p style="padding-left: 40px;"><div class="trapezoid" style = "padding-left: 40px;"><span>  <a href="https://forms.gle/W6Mg4rzuMK6Yk3Am8"> Click here to provide feedback</a> <img src="assets/itcr_arrow.png" style=" width: 10%" ></span></div></p>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Introduction to Reproducible Research</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,initial-scale=1.0">
+  <!--script src="https://kit.fontawesome.com/6a26f47516.js"></script-->
+  <!--<script src="assets/hideOutput.js"></script>-->
+  <link href="assets/style.css" rel="stylesheet">
+</head>
+
+
+
+<div class="hero-image-container">
+  <img class= "hero-image" src="assets/RR25_thin_main_image.png">
+</div>
+<div id="from-x-to-computational-x" class="section level1" number="2">
+<h1><span class="header-section-number">Chapter 2</span> From “X” to “Computational X”</h1>
+<p>What is driving this need for a “reproducibility middle ground” between replication and doing nothing? For starters, there are a lot of new technologies on the scene and in many different fields of study including, biology, chemistry and environmental science. These technologies allow us to collect data at a much higher throughput so we end up with these very complex and very high dimensional data sets. These datasets can be collected almost instantaneously compared to even just ten years ago—the technology has allowed us to create huge data sets at essentially the touch of a button. Furthermore, we the computing power to take existing (already huge) databases and merge them into even bigger and bigger databases. Finally, the massive increase in computing power has allowed us to implement more sophisticated and complex analysis routines.</p>
+<p>The analyses themselves, the models that we fit and the algorithms that we run, are much much more complicated than they used to be. Having a basic understanding of these algorithms is difficult, even for a sophisticated person, and it’s almost impossible to describe these algorithms with words alone. Understanding what someone did in a data analysis now requires looking at <em>code</em> and scrutinizing the computer programs that people used.</p>
+<p>The bottom line with all these different trends is that for every field “X”, there is now “Computational X”. There’s computational biology, computational astronomy—whatever it is you want, there is a computational version of it.</p>
+<div id="example-air-pollution-and-health" class="section level2" number="2.1">
+<h2><span class="header-section-number">2.1</span> Example: Air Pollution and Health</h2>
+<p>One example of an area were reproducibility is important comes from the area of air pollution and health. Air pollution and health is a big field and it involves a confluence of features that emphasize the need for reproducibility.</p>
+<p>The first feature is that we are estimating very small, but very important, public health effects in the presence of a numerous much stronger signals. You can think about air pollution as something that’s perhaps harmful, but even if it were harmful there are likely many other things that are going to be more harmful that you have to worry about. Pollution is going to be at the very top of the list of things that are going to harm you. In other words, there’s an inherently weak signal there.</p>
+<p>Second, the results of a lot of air pollution research inform substantial policy decisions. Many federal air pollution regulations in the United States are based on scientific research in this area and these regulations can affect a lot of stakeholders in government and industry.</p>
+<p>Finally, we use a lot of complex statistical methods to do these studies and these statistical methods are subsequently subjected to intense scrutiny. The combination of an inherently weak signal, substantial policy impacts, and complex statistical methods almost require that the research that we do be reproducible.</p>
+</div>
+<div id="the-data-science-pipeline" class="section level2" number="2.2">
+<h2><span class="header-section-number">2.2</span> The Data Science Pipeline</h2>
+<p>The basic issue is when you read a description of a data analysis, such as in an article or a technical report, for the most part, what you get is the report and nothing else. Of course, everyone knows that behind the scenes there’s <em>a lot</em> that went into this report and that’s what I call the <strong>data science pipeline</strong>.</p>
+<p><img src="resources/images/02-intro_files/figure-html/1-pVlxwkzTzFH4PHWzm9cuXbKpzlbSd1TvXEy60Sste0_p.png" title="The data science pipeline starts with the scientific question, moves to measured data, analytic data, and computational results. Along the way we require processing code and analytic code. Results are then assembled into figures, tables, and numberical summaries." alt="The data science pipeline starts with the scientific question, moves to measured data, analytic data, and computational results. Along the way we require processing code and analytic code. Results are then assembled into figures, tables, and numberical summaries." width="100%" style="display: block; margin: auto;" /></p>
+<p>In this pipeline, there are two “actors”: the <em>author</em> of the report/article and the <em>reader</em>. On the left side, the author is going from left to right along this pipeline. The reader is going from right to left. If you’re the reader you read the article and you want to know more about what happened: Where is the data? What was used here? The basic idea behind reproducibility is to focus on the analytic data and the computational results. With reproducibility the goal is to allow the author of a report and the reader of that report to “meet in the middle”.</p>
+</div>
+<div id="elements-of-reproducibility" class="section level2" number="2.3">
+<h2><span class="header-section-number">2.3</span> Elements of Reproducibility</h2>
+<p>What do we need for reproducibility? There’s a variety of ways to talk about this, but one basic definition that we’ve come up with is that there are four things that are required to make results reproducible:</p>
+<ol style="list-style-type: decimal">
+<li><p><strong>Analytic data</strong>. The data that were used for the analysis that was presented should be available for others to access. This is different from the <em>raw data</em> because very often in a data analysis the raw data are not all used for the analysis, but rather some subset is used. It may be interesting to see the raw data but impractical to actually have it. Analytic data is key to examining the data analysis.</p></li>
+<li><p><strong>Analytic code</strong>. The analytic code is the code that was applied to the analytic data to produce the key results. This may be preprocessing code, regression modeling code, or really any other code used to produce the results from the analytic data.</p></li>
+<li><p><strong>Documentation</strong>. Documentation of that code and the data is very important.</p></li>
+<li><p><strong>Distribution</strong>. Finally, there needs to be some standard means of distribution, so all this data in the code is easily accessible.</p></li>
+</ol>
+</div>
+<div id="authors-and-readers" class="section level2" number="2.4">
+<h2><span class="header-section-number">2.4</span> Authors and Readers</h2>
+<p>It is important to realize that there are multiple players when you talk about reproducibility–there are different types of parties that have different types of interests. There are authors who produce research and they want to make their research reproducible. There are also readers of research and they want to reproduce that work. Everyone needs tools to make their lives easier.</p>
+<p>One current challenge is that authors of research have to undergo considerable effort to make their results available to a wide audience. Publishing data and code today is not necessarily a trivial task. Although there are a number of resources available now, that were not available even five years ago, it’s still a bit of a challenge to get things out on the web (or at least distributed widely). Resources like <a href="https://github.com">GitHub</a> and various data repositories have made a big difference, but there is still a ways to go with respect to building up the public reproducibility infrastructure.</p>
+<p>Furthermore, even when data and code are available, readers often have to download the data, download the code, and then they have to piece everything together, usually by hand. It’s not always an easy task to put the data and code together. Also, readers may not have the same computational resources that the original authors did. If the original authors used an enormous computing cluster, for example, to do their analysis, the readers may not have that same enormous computing cluster at their disposal. It may be difficult for readers to reproduce the same results.</p>
+<p>Generally the toolbox for doing reproducible research is small, although it’s definitely growing. In practice, authors often just throw things up on the web. There are journals and supplementary materials, but they are famously disorganized. There are only a few central databases that authors can take advantage of to post their data and make it available. So if you’re working in a field that has a central database that everyone uses, that’s great. If you’re not, then you have to assemble your own resources. We will discuss the tools for doing reproducible research in the third course in this series.</p>
+</div>
+<div id="summary-1" class="section level2" number="2.5">
+<h2><span class="header-section-number">2.5</span> Summary</h2>
+<ul>
+<li><p>The process of conducting and disseminating research can be depicted as a “data science pipeline”</p></li>
+<li><p>Readers and consumers of data science research are typically not privy to the details of the data science pipeline</p></li>
+<li><p>One view of reproducibility is that it gives research consumers partial access to the raw pipeline elements.</p></li>
+</ul>
+
+</div>
+</div>
+<hr>
+<center> 
+  <div class="footer">
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+  </div>
+</center>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="introduction.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="learning-from-failure.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "section"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

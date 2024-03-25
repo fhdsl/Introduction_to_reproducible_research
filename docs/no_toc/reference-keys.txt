@@ -1,0 +1,17 @@
+introduction
+whats-wrong-with-replication
+reproducibility-to-the-rescue
+reproducibility-guidelines
+summary
+from-x-to-computational-x
+example-air-pollution-and-health
+the-data-science-pipeline
+elements-of-reproducibility
+authors-and-readers
+summary-1
+learning-from-failure
+case-study-developing-a-genomic-predictor
+initial-lessons
+new-information-appears
+lessons-learned
+summary-2
