@@ -1,0 +1,67 @@
+
+
+
+
+# From "X" to "Computational X"
+
+What is driving this need for a "reproducibility middle ground" between replication and doing nothing? For starters, there are a lot of new technologies on the scene and in many different fields of study including, biology, chemistry and environmental science. These technologies allow us to collect data at a much higher throughput so we end up with these very complex and very high dimensional data sets. These datasets can be collected almost instantaneously compared to even just ten years ago---the technology has allowed us to create huge data sets at essentially the touch of a button. Furthermore, we the computing power to take existing (already huge) databases and merge them into even bigger and bigger databases. Finally, the massive increase in computing power has allowed us to implement more sophisticated and complex analysis routines.
+
+The analyses themselves, the models that we fit and the algorithms that we run, are much much more complicated than they used to be. Having a basic understanding of these algorithms is difficult, even for a sophisticated person, and it's almost impossible to describe these algorithms with words alone. Understanding what someone did in a data analysis now requires looking at *code* and scrutinizing the computer programs that people used.
+
+The bottom line with all these different trends is that for every field "X", there is now "Computational X". There's computational biology, computational astronomy---whatever it is you want, there is a computational version of it.
+
+
+
+## Example: Air Pollution and Health
+
+One example of an area were reproducibility is important comes from the area of air pollution and health. Air pollution and health is a big field and it involves a confluence of features that emphasize the need for reproducibility.
+
+The first feature is that we are estimating very small, but very important, public health effects in the presence of a numerous much stronger signals. You can think about air pollution as something that's perhaps harmful, but even if it were harmful there are likely many other things that are going to be more harmful that you have to worry about. Pollution is going to be at the very top of the list of things that are going to harm you. In other words, there's an inherently weak signal there.
+
+Second, the results of a lot of air pollution research inform substantial policy decisions. Many federal air pollution regulations in the United States are based on scientific research in this area and these regulations can affect a lot of stakeholders in government and industry.
+
+Finally, we use a lot of complex statistical methods to do these studies and these statistical methods are subsequently subjected to intense scrutiny. The combination of an inherently weak signal, substantial policy impacts, and complex statistical methods almost require that the research that we do be reproducible.
+
+
+
+## The Data Science Pipeline
+
+
+The basic issue is when you read a description of a data analysis, such as in an article or a technical report, for the most part, what you get is the report and nothing else. Of course, everyone knows that behind the scenes there's *a lot* that went into this report and that's what I call the **data science pipeline**. 
+
+<img src="resources/images/02-intro_files/figure-html//1-pVlxwkzTzFH4PHWzm9cuXbKpzlbSd1TvXEy60Sste0_p.png" title="The data science pipeline starts with the scientific question, moves to measured data, analytic data, and computational results. Along the way we require processing code and analytic code. Results are then assembled into figures, tables, and numberical summaries." alt="The data science pipeline starts with the scientific question, moves to measured data, analytic data, and computational results. Along the way we require processing code and analytic code. Results are then assembled into figures, tables, and numberical summaries." width="100%" style="display: block; margin: auto;" />
+
+In this pipeline, there are two "actors": the *author* of the report/article and the *reader*. On the left side, the author is going from left to right along this pipeline. The reader is going from right to left. If you're the reader you read the article and you want to know more about what happened: Where is the data? What was used here? The basic idea behind reproducibility is to focus on the analytic data and the computational results. With reproducibility the goal is to allow the author of a report and the reader of that report to "meet in the middle". 
+
+## Elements of Reproducibility
+
+What do we need for reproducibility? There's a variety of ways to talk about this, but one basic definition that we've come up with is that there are four things that are required to make results reproducible:
+
+1. **Analytic data**. The data that were used for the analysis that was presented should be available for others to access. This is different from the *raw data* because very often in a data analysis the raw data are not all used for the analysis, but rather some subset is used. It may be interesting to see the raw data but impractical to actually have it. Analytic data is key to examining the data analysis. 
+
+2. **Analytic code**. The analytic code is the code that was applied to the analytic data to produce the key results. This may be preprocessing code, regression modeling code, or really any other code used to produce the results from the analytic data.
+
+3. **Documentation**. Documentation of that code and the data is very important. 
+
+4. **Distribution**. Finally, there needs to be some standard means of distribution, so all this data in the code is easily accessible. 
+
+
+## Authors and Readers
+
+It is important to realize that there are multiple players when you talk about reproducibility--there are different types of parties that have different types of interests. There are authors who produce research and they want to make their research reproducible. There are also readers of research and they want to reproduce that work. Everyone needs tools to make their lives easier.
+
+One current challenge is that authors of research have to undergo considerable effort to make their results available to a wide audience. Publishing data and code today is not necessarily a trivial task. Although there are a number of resources available now, that were not available even five years ago, it's still a bit of a challenge to get things out on the web (or at least distributed widely). Resources like [GitHub](https://github.com) and various data repositories have made a big difference, but there is still a ways to go with respect to building up the public reproducibility infrastructure.
+
+Furthermore, even when data and code are available, readers often have to download the data, download the code, and then they have to piece everything together, usually by hand. It's not always an easy task to put the data and code together. Also, readers may not have the same computational resources that the original authors did. If the original authors used an enormous computing cluster, for example, to do their analysis, the readers may not have that same enormous computing cluster at their disposal. It may be difficult for readers to reproduce the same results. 
+
+Generally the toolbox for doing reproducible research is small, although it's definitely growing. In practice, authors often just throw things up on the web. There are journals and supplementary materials, but they are famously disorganized. There are only a few central databases that authors can take advantage of to post their data and make it available. So if you're working in a field that has a central database that everyone uses, that's great. If you're not, then you have to assemble your own resources. We will discuss the tools for doing reproducible research in the third course in this series.
+	
+	
+## Summary
+
+* The process of conducting and disseminating research can be depicted as a "data science pipeline"
+
+* Readers and consumers of data science research are typically not privy to the details of the data science pipeline
+
+* One view of reproducibility is that it gives research consumers partial access to the raw pipeline elements.
+
